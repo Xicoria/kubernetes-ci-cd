@@ -66,7 +66,7 @@ module.exports = function(Crossword) {
   Crossword.clear = function(cb) {
     
     Crossword.findOne(function(err, crossword) {
-      console.log(`===XXX CLEAR PRESSED XXX===`);
+      console.log(`---- CLEAR PRESSED ----`);
       fireHit();      
       if(err) handleError(err.message, cb);
       var updatedWords = [];
